@@ -6,7 +6,6 @@
 html {
     block-size: 100%;
 }
-
 h1,
 h2,
 h3,
@@ -24,70 +23,186 @@ ul,
 ol {
     list-style: none;
 }
-
+.visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+/* первый этап */
 .page {
     display: flex;
     align-items: center;
     margin: auto;
     color: #fff;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: "Fira Sans Condensed", sans-serif;
     font-size: 18px;
     background-color: #1b1919;
     inline-size: 1100px;
     block-size: 100%;
-  }
-  
-  video {
+}
+video {
     width: 100%;
-  }
-
-  .content {
+}
+.content {
     display: flex;
     gap: 30px;
     margin: 0 30px;
     inline-size: 100%;
-  }
-  
-  .result {
+}
+.result {
     align-self: flex-end;
-  }
-
-  .search-form {
+}
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.search-form__label {
     display: flex;
     align-items: center;
-    gap: 15px;
-  }
-
-  .content__list {
+    width: fit-content;
+    cursor: pointer;
+}
+.search-form__fieldset-title {
+    margin-bottom: 5px;
+    color: #fff;
+    font-family: Fira Sans Condensed;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+}
+.search-form__label {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+}
+.search-form__label-text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+}
+.search-form__label:has(:focus-visible) {
+    outline: 1px solid #fff;
+    outline-offset: 1px;
+}
+.search-form__textfield {
+    min-width: 228px;
+    border-top: 1px solid #fff;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+    border-left: 0;
+    padding: 2.5px 14px 2.5px 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Fira Sans Condensed;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    background: transparent;
+    appearance: none;
+}
+.search-form__textfield:focus {
+    outline: 0;
+}
+.search-form__textfield:active {
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+}
+.search-form__checkbox-list {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.search-form__pseudo-checkbox {
     position: relative;
-    overflow-y: scroll;
-    block-size: 150px;
-    scrollbar-width: none;
-  }
+    display: flex;
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    border: 1px solid #fff;
+}
 
-  .content__details {
+.content__details {
     inline-size: 100%;
-  }
-
-  .result__video-container {
+    flex-grow: 1;
+}
+.result__video-container {
     position: relative;
     inline-size: 711px;
-    margin: 0 0 11px;
-  }
+}
 
-  .content__list {
+.content__list {
     position: relative;
     overflow-y: scroll;
     block-size: 298px;
     scrollbar-width: none;
-  }
-
-  .content__video-card {
+}
+.content__list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.content__video-card {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .content__video-card-thumbnail {
+    align-items: start;
+}
+.content__video-card-thumbnail {
     width: 194px;
     height: 103px;
-  }
+}
+.content__card-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.content__video-card-title {
+    margin-bottom: 6px;
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.title {
+    margin-bottom: 26px;
+    color: #fff;
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 94%;
+    text-transform: uppercase;
+}
+.button {
+    border: 1px solid #fff;
+    padding: 6px 73.5px;
+    color: #fff;
+    font-family: Fira Sans Condensed;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+}
+.button:hover {
+    text-decoration: underline;
+}
+.button:focus {
+    outline: 0;
+}
+
+.button:focus-visible {
+    outline: 1px solid #fff;
+    outline-offset: 1px;
+}
+.button:active {
+    background: #545050;
+}
+.more-button {
+    width: 100%;
+}
