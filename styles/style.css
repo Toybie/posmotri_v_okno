@@ -25,6 +25,8 @@ ol {
     list-style: none;
 }
 
+/* Общие параметры */
+
 .visually-hidden {
     position: absolute;
     inline-size: 1px;
@@ -51,16 +53,11 @@ video {
     width: 100%;
 }
 
-.content {
-    display: flex;
-    gap: 30px;
-    margin: 0 30px;
-    inline-size: 100%;
-}
-
 .result {
     align-self: flex-end;
 }
+
+/* Блок search-form */
 
 .search-form {
     display: flex;
@@ -75,6 +72,9 @@ video {
     cursor: pointer;
 }
 
+fieldset {
+    border: 0;
+}
 
 .search-form__fieldset-title {
     margin-bottom: 5px;
@@ -95,10 +95,6 @@ video {
 .search-form__label:has(:focus-visible) {
     outline: 1px solid #fff;
     outline-offset: 1px;
-}
-
-fieldset {
-border: 0;
 }
 
 .search-form__textfield {
@@ -147,6 +143,14 @@ border: 0;
     margin: 1px 0 0 1px;
 }
 
+/* Блок Content */
+
+.content {
+    display: flex;
+    gap: 30px;
+    margin: 0 30px;
+    inline-size: 100%;
+}
 .content__details {
     inline-size: 100%;
     flex-grow: 1;
@@ -227,6 +231,9 @@ border: 0;
 .content__accent {
     color: #545050;
 }
+
+/* Блок Button */
+
 .button {
     border: 1px solid #fff;
     padding: 6px 73.5px;
