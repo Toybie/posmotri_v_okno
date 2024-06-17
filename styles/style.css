@@ -63,6 +63,7 @@ video {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    margin-top: 16px;
 }
 
 .search-form__label {
@@ -70,26 +71,34 @@ video {
     align-items: center;
     width: fit-content;
     cursor: pointer;
+    gap: 5px;
 }
 
 fieldset {
     border: 0;
 }
 
+.search-form__fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
 .search-form__fieldset-title {
     margin-bottom: 5px;
     color: #fff;
-    font-family: Fira Sans Condensed;
+    font-family: Fira Sans Condensed, sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: normal;
+    line-height: 22px;
 }
 
 .search-form__label-text {
     color: #fff;
     font-weight: 400;
     font-size: 18px;
-    line-height: normal;
+    line-height: 22px;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -104,8 +113,8 @@ fieldset {
     border-bottom: 1px solid #fff;
     border-left: 0;
     padding: 2.5px 14px 2.5px 0;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: Fira Sans Condensed;
+    color: rgba(255 255 255 / 0.7);
+    font-family: Fira Sans Condensed, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: normal;
@@ -209,19 +218,23 @@ fieldset {
 .content__card-link_current {
     background: #545050;
 }
+
 .content__video-card-title {
     margin-bottom: 6px;
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
     text-transform: uppercase;
 }
 
 .title {
     margin-bottom: 26px;
     color: #fff;
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     font-weight: 700;
     font-size: 75px;
     line-height: 94%;
@@ -238,7 +251,7 @@ fieldset {
     border: 1px solid #fff;
     padding: 6px 73.5px;
     color: #fff;
-    font-family: Fira Sans Condensed;
+    font-family: Fira Sans Condensed, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: normal;
