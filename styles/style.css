@@ -75,6 +75,7 @@ video {
     cursor: pointer;
 }
 
+
 .search-form__fieldset-title {
     margin-bottom: 5px;
     color: #fff;
@@ -94,6 +95,10 @@ video {
 .search-form__label:has(:focus-visible) {
     outline: 1px solid #fff;
     outline-offset: 1px;
+}
+
+fieldset {
+border: 0;
 }
 
 .search-form__textfield {
