@@ -225,7 +225,7 @@ fieldset {
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
-    text-overflow: clip;
+    text-overflow: clip; /* добавил text-overflow */
     white-space: nowrap;
     overflow: hidden;
     text-transform: uppercase;
