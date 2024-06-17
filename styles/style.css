@@ -63,7 +63,7 @@ video {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin-top: 16px;
+    margin-top: 16px; /* добавлен отступ от видео */
 }
 
 .search-form__label {
@@ -78,17 +78,17 @@ fieldset {
     border: 0;
 }
 
+/* добавил выавние, но оно все равно не бьется пиксель в пиксель. Если этого не достаточно - буду на след итервцию уточнять у наставника. Спаисбо */
 .search-form__fieldset {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    align-items: flex-start;
+    justify-content: flex-end;
   }
 
 .search-form__fieldset-title {
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* выровнял "Время суток" */
     color: #fff;
-    font-family: Fira Sans Condensed, sans-serif;
+    font-family: Fira Sans Condensed, sans-serif; /* добавлены засечки и высота строки */ 
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -114,7 +114,7 @@ fieldset {
     border-left: 0;
     padding: 2.5px 14px 2.5px 0;
     color: rgba(255 255 255 / 0.7);
-    font-family: Fira Sans Condensed, sans-serif;
+    font-family: Fira Sans Condensed, sans-serif; /* добавлены засечки */
     font-weight: 400;
     font-size: 18px;
     line-height: normal;
@@ -221,7 +221,7 @@ fieldset {
 
 .content__video-card-title {
     margin-bottom: 6px;
-    font-family: Oswald, sans-serif;
+    font-family: Oswald, sans-serif; /* добавлены засечки и высота строки */
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
@@ -234,7 +234,7 @@ fieldset {
 .title {
     margin-bottom: 26px;
     color: #fff;
-    font-family: Oswald, sans-serif;
+    font-family: Oswald, sans-serif; /* добавлены засечки и высота строки */
     font-weight: 700;
     font-size: 75px;
     line-height: 94%;
@@ -251,7 +251,7 @@ fieldset {
     border: 1px solid #fff;
     padding: 6px 73.5px;
     color: #fff;
-    font-family: Fira Sans Condensed, sans-serif;
+    font-family: Fira Sans Condensed, sans-serif; /* добавлены засечки и высота строки */
     font-weight: 700;
     font-size: 18px;
     line-height: normal;
