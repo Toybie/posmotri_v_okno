@@ -1,4 +1,4 @@
-# posmotri_v_okno-main
+# posmotri_v_okno
 
 Ссылки:
-- Репозиторий проекта: https://github.com/Toybie/posmotri_v_okno-main.git
+- Репозиторий проекта: https://github.com/Toybie/posmotri_v_okno.git
